@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>刘宇航 | Yuhang Liu - 财务数字化 Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #fcfdfe; }
+        .gradient-border { position: relative; border-radius: 1.5rem; background: white; }
+        .gradient-border::after { content: ''; position: absolute; inset: -1px; background: linear-gradient(135deg, #3b82f6, #10b981); border-radius: 1.5rem; z-index: -1; opacity: 0.2; }
+        .intern-card { transition: all 0.3s ease; }
+        .intern-card:hover { transform: translateY(-5px); }
+        .intern-card:hover .intern-icon { transform: scale(1.1) rotate(5deg); }
+        .section-title { position: relative; display: inline-block; padding-bottom: 8px; }
+        .section-title::after { content: ''; position: absolute; bottom: 0; left: 0; width: 40px; height: 4px; background: #3b82f6; border-radius: 2px; }
+        .course-tag { background: #f1f5f9; color: #475569; padding: 2px 10px; border-radius: 6px; font-size: 11px; font-weight: 600; border: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body class="text-slate-900 leading-relaxed">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/70 backdrop-blur-lg border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold tracking-tighter">L</div>
+                <span class="text-xl font-bold tracking-tight text-slate-800">刘宇航 <span class="text-blue-600">Yuhang Liu</span></span>
+            </div>
+            <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-500">
+                <a href="#about" class="hover:text-blue-600 transition">关于</a>
+                <a href="#education" class="hover:text-blue-600 transition">教育</a>
+                <a href="#intern" class="hover:text-blue-600 transition">实战经历</a>
+                <a href="#projects" class="hover:text-blue-600 transition">项目建模</a>
+                <a href="#skills" class="hover:text-blue-600 transition italic italic">AI & Tech</a>
+                <a href="mailto:u7851696@anu.edu.au" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition shadow-lg shadow-blue-100">联系我</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="about" class="pt-32 pb-20 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-12 items-center">
+            <div class="md:col-span-7">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold mb-6 italic italic">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                    </span>
+                    财务数字化 / Financial Digitization
+                </div>
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-8 tracking-tighter leading-tight">
+                    Show, Don't Tell. <br><span class="text-blue-600 underline decoration-slate-200 decoration-4 underline-offset-8">用数据讲好故事。</span>
+                </h1>
+                <p class="text-lg text-slate-600 mb-8 max-w-xl leading-relaxed">
+                    现于 **澳大利亚国立大学 (QS 32)** 攻读应用会计硕士。我致力于将会计学的严谨逻辑与 **Python/SQL/AI** 的数字化能力深度耦合。马拉松跑者，相信复利的力量，追求长期主义的职场产出。
+                </p>
+                <div class="flex flex-wrap gap-6 text-sm">
+                    <div class="flex items-center gap-2 font-medium text-slate-500"><i class="fas fa-envelope text-blue-500"></i> u7851696@anu.edu.au</div>
+                    <div class="flex items-center gap-2 font-medium text-slate-500"><i class="fas fa-phone text-blue-500"></i> 13868996917</div>
+                </div>
+            </div>
+            <div class="md:col-span-5 relative">
+                <div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border-8 border-white group">
+                    <img src="https://i.ibb.co/Q3NdbpQK/image.jpg" alt="刘宇航" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -bottom-6 -left-6 bg-white p-5 rounded-2xl shadow-xl border border-slate-100 max-w-[180px]">
+                    <div class="flex items-center gap-3 mb-2">
+                        <div class="w-10 h-10 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 font-bold italic">42K</div>
+                        <span class="text-sm font-bold">马拉松跑者</span>
+                    </div>
+                    <p class="text-[10px] text-slate-400 font-medium">具备极强的执行耐力与多文化环境适应力</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 教育背景 Education (详尽版) -->
+    <section id="education" class="py-24 bg-white border-y border-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-16 section-title">教育背景 / Education</h2>
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- 硕士 -->
+                <div class="bg-slate-50 rounded-3xl p-8 border border-slate-100 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 p-8 opacity-[0.03] group-hover:opacity-[0.08] transition-opacity"><i class="fas fa-graduation-cap text-9xl"></i></div>
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-800">澳大利亚国立大学 (QS 32)</h3>
+                            <p class="text-blue-600 font-bold text-sm tracking-wide mt-1">2025.02 - 2025.12</p>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-2xl font-black text-slate-800">6.0 <span class="text-sm font-normal text-slate-400">/ 7.0</span></span>
+                            <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Rank: 13/185</p>
+                        </div>
+                    </div>
+                    <p class="font-bold text-slate-700 mb-6 underline decoration-blue-200 underline-offset-4">应用会计学硕士 | Application Accounting</p>
+                    <div class="space-y-4">
+                        <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest">Core Modules (High Distinction / Distinction)</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="course-tag">财务报表与报告 (HD)</span>
+                            <span class="course-tag">应用财务基础 (HD)</span>
+                            <span class="course-tag">当代会计高级分析 (D)</span>
+                            <span class="course-tag">当代会计数据分析 (D)</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 本科 -->
+                <div class="bg-slate-50 rounded-3xl p-8 border border-slate-100 relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 p-8 opacity-[0.03] group-hover:opacity-[0.08] transition-opacity"><i class="fas fa-award text-9xl"></i></div>
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-800">杭州电子科技大学</h3>
+                            <p class="text-blue-600 font-bold text-sm tracking-wide mt-1">2020.09 - 2024.07</p>
+                        </div>
+                        <div class="text-right">
+                            <span class="text-2xl font-black text-slate-800">4.37 <span class="text-sm font-normal text-slate-400">/ 5.0</span></span>
+                            <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Rank: 15/205</p>
+                        </div>
+                    </div>
+                    <p class="font-bold text-slate-700 mb-2 italic italic">会计学学士 | Accounting</p>
+                    <p class="text-xs text-emerald-700 font-semibold mb-6 flex items-center gap-1"><i class="fas fa-certificate text-[10px]"></i> 浙江省政府奖学金、优秀毕业生、连续校一等奖学金</p>
+                    <div class="space-y-4">
+                        <p class="text-[10px] font-black text-slate-400 uppercase tracking-widest">Expertise Courses (94+)</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="course-tag">税法 (96)</span>
+                            <span class="course-tag">成本管理会计 (94)</span>
+                            <span class="course-tag">会计大数据技术 (94)</span>
+                            <span class="course-tag">国际会计 (96)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 职业实践 Internship (3.0 终极实战版内容) -->
+    <section id="intern" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-16 section-title">职业实践 / Internship Journey</h2>
+            <div class="space-y-10">
+                <!-- 乾行 -->
+                <div class="bg-white rounded-[2rem] p-8 md:p-12 shadow-sm border border-slate-100 intern-card">
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div>
+                            <div class="intern-icon w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 text-2xl mb-6"><i class="fas fa-microchip"></i></div>
+                            <h3 class="text-2xl font-bold mb-1">浙江乾行信息技术</h3>
+                            <p class="text-blue-600 font-semibold text-sm">会计实习生 | 2023.07 - 2023.09</p>
+                        </div>
+                        <div class="md:col-span-2 space-y-6 border-l border-slate-100 md:pl-8">
+                            <div class="flex gap-4">
+                                <div class="mt-1"><i class="fas fa-bolt text-amber-500"></i></div>
+                                <div><h4 class="font-bold mb-2">内控流程优化 (核心产出)</h4><p class="text-slate-600 text-sm">协助财务主管制定<b>《报销附件标准化核对清单》</b>。将财务月度结账效率提升了 <span class="text-emerald-600 font-bold">10%</span>。</p></div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="mt-1"><i class="fas fa-search-dollar text-blue-500"></i></div>
+                                <div><h4 class="font-bold mb-2">账目核查与差异分析</h4><p class="text-slate-600 text-sm">负责 ERP 系统数据与纸质凭证的匹配校验，定位并修正了 <b>15 处历史挂账错误</b>。</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 安泰 -->
+                <div class="bg-white rounded-[2rem] p-8 md:p-12 shadow-sm border border-slate-100 intern-card">
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div>
+                            <div class="intern-icon w-16 h-16 bg-emerald-50 rounded-2xl flex items-center justify-center text-emerald-600 text-2xl mb-6"><i class="fas fa-file-invoice"></i></div>
+                            <h3 class="text-2xl font-bold mb-1">安泰会计师事务所</h3>
+                            <p class="text-emerald-600 font-semibold text-sm">审计实习生 | 2023.03 - 2023.06</p>
+                        </div>
+                        <div class="md:col-span-2 space-y-6 border-l border-slate-100 md:pl-8">
+                            <div class="flex gap-4">
+                                <div class="mt-1"><i class="fas fa-envelope-open-text text-emerald-500"></i></div>
+                                <div><h4 class="font-bold mb-2">函证控管 (极致执行)</h4><p class="text-slate-600 text-sm">独立负责 20 余家银行及往来款项函证，实现了 <span class="text-emerald-600 font-bold">100% 回函率</span>，无一遗漏。</p></div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="mt-1"><i class="fas fa-shield-alt text-emerald-500"></i></div>
+                                <div><h4 class="font-bold mb-2">替代程序执行</h4><p class="text-slate-600 text-sm">针对函证回函不符项，主动调阅原始凭证进行替代程序核查，通过底层数据闭环验证余额准确性。</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 中汇 -->
+                <div class="bg-white rounded-[2rem] p-8 md:p-12 shadow-sm border border-slate-100 intern-card">
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div>
+                            <div class="intern-icon w-16 h-16 bg-purple-50 rounded-2xl flex items-center justify-center text-purple-600 text-2xl mb-6"><i class="fas fa-chart-bar"></i></div>
+                            <h3 class="text-2xl font-bold mb-1">杭州中汇会计师事务所</h3>
+                            <p class="text-purple-600 font-semibold text-sm">审计实习生 | 2022.10 - 2023.01</p>
+                        </div>
+                        <div class="md:col-span-2 space-y-6 border-l border-slate-100 md:pl-8">
+                            <div class="flex gap-4">
+                                <div class="mt-1"><i class="fas fa-table text-purple-500"></i></div>
+                                <div><h4 class="font-bold mb-2">底稿编制与数据清洗</h4><p class="text-slate-600 text-sm">协助负责管理费用等科目底稿。利用 <b>Excel 数据透视表及 Vlookup</b> 对凭证序时账进行快速清洗与核对。</p></div>
+                            </div>
+                            <div class="flex gap-4">
+                                <div class="mt-1"><i class="fas fa-list-check text-purple-500"></i></div>
+                                <div><h4 class="font-bold mb-2">抽凭测试与存货监盘</h4><p class="text-slate-600 text-sm">抽取 100+ 笔大额样本。在截止测试中发现并调整 <b>2 笔跨期确认费用</b>。参与实地盘点，确保账实相符。</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 财务建模与竞赛 (3.0 终极实战版内容) -->
+    <section id="projects" class="py-24 bg-white text-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-16 section-title">财务建模与竞赛 / Financial Modeling</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="gradient-border p-10 shadow-2xl">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="px-4 py-1.5 bg-blue-100 text-blue-700 text-xs font-black rounded-full uppercase tracking-tighter">省级一等奖 (TOP 1%)</span>
+                        <span class="text-slate-400 text-xs font-bold uppercase tracking-widest">2021 - 2022</span>
+                    </div>
+                    <h3 class="text-2xl font-black mb-6">浙江省财会信息化竞赛</h3>
+                    <ul class="space-y-4 text-slate-600 text-sm leading-relaxed">
+                        <li class="flex gap-3"><i class="fas fa-check text-emerald-500 mt-1"></i><span><b>成本核算优化：</b>基于 ABC 成本法拆解百万级数据，纠正 <b>20% 毛利偏差</b>。</span></li>
+                        <li class="flex gap-3"><i class="fas fa-check text-emerald-500 mt-1"></i><span><b>决策分析：</b>运用 CVP 模型及 WACC 测算，推导出最优资本结构。</span></li>
+                        <li class="flex gap-3"><i class="fas fa-check text-emerald-500 mt-1"></i><span><b>供应链追溯：</b>独立编制总成本表，定位 WIP 存货积压节点。</span></li>
+                    </ul>
+                </div>
+                <div class="gradient-border p-10 shadow-2xl">
+                    <div class="flex justify-between items-start mb-6">
+                        <span class="px-4 py-1.5 bg-emerald-100 text-emerald-700 text-xs font-black rounded-full uppercase tracking-tighter">校级第一名 (1/100+)</span>
+                        <span class="text-slate-400 text-xs font-bold uppercase tracking-widest">2022.06</span>
+                    </div>
+                    <h3 class="text-2xl font-black mb-6">“中汇杯”案例分析大赛</h3>
+                    <ul class="space-y-4 text-slate-600 text-sm leading-relaxed">
+                        <li class="flex gap-3"><i class="fas fa-check text-emerald-500 mt-1"></i><span><b>融资需求预测：</b>针对产能扩张计划，搭建财务模型测算 <b>90 亿元</b>融资缺口。</span></li>
+                        <li class="flex gap-3"><i class="fas fa-check text-emerald-500 mt-1"></i><span><b>并购成本测算：</b>设计 30% 股权并购方案，预估节省 <b>15 亿元</b>采购支出。</span></li>
+                        <li class="flex gap-3"><i class="fas fa-check text-emerald-500 mt-1"></i><span><b>激励优化：</b>利用 31.4 亿使用权资产缓解压力，设计“2+N”股权激励。</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能栈与 AI 工具 (3.0 终极实战版内容) -->
+    <section id="skills" class="py-24 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-12 gap-16">
+                <div class="md:col-span-4">
+                    <h2 class="text-4xl font-black mb-8 italic italic tracking-tighter">Tech Stack<br>& AI Potential</h2>
+                    <p class="text-slate-400 text-sm mb-10 leading-relaxed font-medium">我不只是使用这些工具，我将它们整合进财务流中，解决复杂的合规与效率问题。这是我作为“AI 原生财务人”的核心竞争力。</p>
+                    <div class="space-y-4">
+                        <div class="p-6 bg-white/5 rounded-2xl border border-white/10 hover:border-blue-500 transition-colors">
+                            <h4 class="font-black text-blue-400 mb-2 italic tracking-widest"># PROMPTS LIBRARY</h4>
+                            <p class="text-[11px] text-slate-400 leading-relaxed font-semibold uppercase">专门调教的审计异常点识别与底稿自动化生成 Prompts 库。</p>
+                        </div>
+                        <div class="p-6 bg-white/5 rounded-2xl border border-white/10 hover:border-emerald-500 transition-colors">
+                            <h4 class="font-black text-emerald-400 mb-2 italic tracking-widest"># PRODUCTS I LIKE</h4>
+                            <p class="text-[11px] text-slate-400 leading-relaxed font-semibold uppercase">Cursor, Tableau, SQL Server, SAP ERP, Pandas.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-8 grid grid-cols-2 gap-4">
+                    <div class="p-8 bg-white/5 rounded-[2rem] border border-white/10 hover:bg-white/[0.08] transition"><i class="fas fa-database text-4xl mb-6 text-blue-400"></i><h4 class="font-black mb-2 uppercase tracking-tighter">SQL Master</h4><p class="text-xs text-slate-400 leading-relaxed">海量财务数据提取、清洗与多表关联对账。熟练子查询与复杂财务报表逻辑映射。</p></div>
+                    <div class="p-8 bg-white/5 rounded-[2rem] border border-white/10 hover:bg-white/[0.08] transition"><i class="fab fa-python text-4xl mb-6 text-emerald-400"></i><h4 class="font-black mb-2 uppercase tracking-tighter">Python Analysis</h4><p class="text-xs text-slate-400 leading-relaxed">Pandas 库编写脚本自动化处理重复性财务任务，实现报表汇总与核对的秒级化。</p></div>
+                    <div class="p-8 bg-white/5 rounded-[2rem] border border-white/10 hover:bg-white/[0.08] transition"><i class="fas fa-chart-line text-4xl mb-6 text-purple-400"></i><h4 class="font-black mb-2 uppercase tracking-tighter">BI Visualization</h4><p class="text-xs text-slate-400 leading-relaxed">Tableau 构建可视化仪表盘，直观展示关键经营指标，将枯燥账目转化为经营决策逻辑。</p></div>
+                    <div class="p-8 bg-white/5 rounded-[2rem] border border-white/10 hover:bg-white/[0.08] transition"><i class="fas fa-file-excel text-4xl mb-6 text-green-500"></i><h4 class="font-black mb-2 uppercase tracking-tighter">Excel Expert</h4><p class="text-xs text-slate-400 leading-relaxed">三张表建模、VBA 宏、Power Query、Solver。解决传统财务中的极端复杂运算。</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-16 bg-white border-t border-slate-100 text-center">
+        <p class="text-slate-400 text-[10px] font-black tracking-[0.3em] uppercase">Built with Logic & AI by Yuhang Liu. 2024</p>
+    </footer>
+
+</body>
+</html>
