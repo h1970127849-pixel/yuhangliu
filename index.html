@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="zh-CN" class="scroll-smooth">
+<html lang="zh-CN" class="scroll-smooth scroll-pt-24">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>刘宇航 | Yuhang Liu - 财务数字化 Portfolio</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%232563eb%22/><text y=%22.9em%22 font-size=%2290%22 font-weight=%22bold%22 fill=%22white%22>L</text></svg>">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -22,23 +23,39 @@
 <body class="text-slate-900 leading-relaxed">
 
     <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-white/70 backdrop-blur-lg border-b border-slate-100">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-2">
-                <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold tracking-tighter">L</div>
-                <span class="text-xl font-bold tracking-tight text-slate-800">刘宇航 <span class="text-blue-600">Yuhang Liu</span></span>
+<nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+
+            <div class="flex items-center gap-10">
+                <div class="flex items-center gap-2 shrink-0">
+                    <div class="w-9 h-9 bg-slate-900 rounded-lg flex items-center justify-center text-white font-bold text-lg tracking-tighter">L</div>
+                    <span class="text-lg font-bold tracking-tight text-slate-800">刘宇航 <span class="hidden sm:inline text-blue-600">Yuhang</span></span>
+                </div>
+
+                <div class="hidden md:flex items-center gap-6 text-[13px] font-bold text-slate-500 uppercase tracking-wide">
+                    <a href="#about" class="hover:text-blue-600 transition hover:bg-slate-50 px-3 py-2 rounded-lg">关于</a>
+                    <a href="#education" class="hover:text-blue-600 transition hover:bg-slate-50 px-3 py-2 rounded-lg">教育</a>
+                    <a href="#campus" class="hover:text-blue-600 transition hover:bg-slate-50 px-3 py-2 rounded-lg">校园</a>
+                    <a href="#intern" class="hover:text-blue-600 transition hover:bg-slate-50 px-3 py-2 rounded-lg">实战</a>
+                    <a href="#projects" class="hover:text-blue-600 transition hover:bg-slate-50 px-3 py-2 rounded-lg">项目</a>
+                    <a href="#skills" class="hover:text-blue-600 transition hover:bg-slate-50 px-3 py-2 rounded-lg">AI & Tech</a>
+                </div>
             </div>
-            <div class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-500">
-                <a href="#about" class="hover:text-blue-600 transition">关于</a>
-                <a href="#education" class="hover:text-blue-600 transition">教育</a>
-                <a href="#intern" class="hover:text-blue-600 transition">实战经历</a>
-                <a href="#projects" class="hover:text-blue-600 transition">项目建模</a>
-                <a href="#skills" class="hover:text-blue-600 transition italic italic">AI & Tech</a>
-                <a href="mailto:u7851696@anu.edu.au" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition shadow-lg shadow-blue-100">联系我</a>
+
+            <div class="flex items-center gap-3">
+
+                <a href="./Liu_Yuhang_Resume.pdf" target="_blank" class="hidden sm:flex items-center gap-2 bg-slate-900 text-white px-5 py-2.5 rounded-full text-xs font-bold hover:bg-slate-700 hover:scale-105 transition-all shadow-lg shadow-slate-200 group border border-slate-900">
+                    <i class="fas fa-file-arrow-down group-hover:-translate-y-0.5 transition-transform"></i>
+                    <span>Resume</span>
+                </a>
+                <div class="hidden sm:block h-6 w-px bg-slate-200 mx-1"></div>
+                <a href="mailto:u7851696@anu.edu.au" class="w-9 h-9 bg-white border border-slate-200 rounded-full flex items-center justify-center text-slate-400 hover:text-orange-500 hover:border-orange-500 transition hover:bg-orange-50">
+                    <i class="fas fa-envelope text-sm"></i>
+                </a>
             </div>
+
         </div>
     </nav>
-
     <!-- Hero Section -->
     <section id="about" class="pt-32 pb-20 px-6">
         <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-12 items-center">
@@ -134,6 +151,57 @@
         </div>
     </section>
 
+        <!-- 校园经历 -->
+    <section id="campus" class="py-24 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-16 section-title">校园经历 / Campus Experience</h2>
+
+            <div class="bg-slate-50 rounded-[2rem] p-8 md:p-12 shadow-sm border border-slate-100 intern-card">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div>
+                        <div class="intern-icon w-16 h-16 bg-rose-50 rounded-2xl flex items-center justify-center text-rose-600 text-2xl mb-6">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-1">会计学院义嘉勤</h3>
+                        <p class="text-rose-600 font-semibold text-sm">会长 & 文工部部长 | 2021.09 - 2023.06</p>
+                        <div class="mt-4 flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-[10px] font-bold text-slate-500 uppercase tracking-wider">Leadership</span>
+                            <span class="px-3 py-1 bg-white border border-slate-200 rounded-full text-[10px] font-bold text-slate-500 uppercase tracking-wider">Event Planning</span>
+                        </div>
+                    </div>
+
+                    <div class="md:col-span-2 space-y-8 border-l border-slate-200 md:pl-8">
+
+                        <div class="flex gap-4 group">
+                            <div class="mt-1 transition-transform group-hover:scale-110">
+                                <i class="fas fa-balance-scale text-rose-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-2 text-slate-800">综测考评与数据治理</h4>
+                                <p class="text-slate-600 text-sm leading-relaxed">
+                                    统筹全院 <span class="text-rose-600 font-bold">1,500+ 名</span> 学生的奖助学金评审工作。将学业、竞赛、社会实践等多维度评分标准细化为标准化 Excel 模型，在任期内实现了评审结果 <span class="text-rose-600 font-bold">0 申诉 (Zero Appeals)</span> 的极高准确率，确保了 10+ 个奖项类别的公平分配。
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4 group">
+                            <div class="mt-1 transition-transform group-hover:scale-110">
+                                <i class="fas fa-bullhorn text-orange-500"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-2 text-slate-800">品牌活动策划与执行</h4>
+                                <p class="text-slate-600 text-sm leading-relaxed">
+                                    创办并落地“国奖分享会”、“冬日送温暖”等系列品牌活动。负责从方案策划、辅导员对接（上传下达）到现场统筹的全流程闭环。累计服务覆盖 <span class="text-orange-600 font-bold">2,000+ 人次</span>，有效提升了社团在学院内的凝聚力与影响力。
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- 职业实践 Internship (3.0 终极实战版内容) -->
     <section id="intern" class="py-24 bg-slate-50">
         <div class="max-w-7xl mx-auto px-6">
@@ -203,35 +271,235 @@
         </div>
     </section>
 
-    <!-- 财务建模与竞赛 (3.0 终极实战版内容) -->
+    <!-- 财务建模与竞赛 (垂直堆叠细化版) -->
     <section id="projects" class="py-24 bg-white text-slate-800">
         <div class="max-w-7xl mx-auto px-6">
             <h2 class="text-3xl font-bold mb-16 section-title">财务建模与竞赛 / Financial Modeling</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="gradient-border p-10 shadow-2xl">
-                    <div class="flex justify-between items-start mb-6">
-                        <span class="px-4 py-1.5 bg-blue-100 text-blue-700 text-xs font-black rounded-full uppercase tracking-tighter">省级一等奖 (TOP 1%)</span>
-                        <span class="text-slate-400 text-xs font-bold uppercase tracking-widest">2021 - 2022</span>
-                    </div>
-                    <h3 class="text-2xl font-black mb-6">浙江省财会信息化竞赛</h3>
-                    <ul class="space-y-4 text-slate-600 text-sm leading-relaxed">
-                        <li class="flex gap-3"><i class="fas fa-check text-emerald-500 mt-1"></i><span><b>成本核算优化：</b>基于 ABC 成本法拆解百万级数据，纠正 <b>20% 毛利偏差</b>。</span></li>
-                        <li class="flex gap-3"><i class="fas fa-check text-emerald-500 mt-1"></i><span><b>决策分析：</b>运用 CVP 模型及 WACC 测算，推导出最优资本结构。</span></li>
-                        <li class="flex gap-3"><i class="fas fa-check text-emerald-500 mt-1"></i><span><b>供应链追溯：</b>独立编制总成本表，定位 WIP 存货积压节点。</span></li>
-                    </ul>
+
+            <!-- 垂直堆叠容器 -->
+            <div class="space-y-12">
+
+               <!-- 项目 1: EY-CBE 数字化审计与财务决策分析 -->
+<div class="gradient-border p-8 md:p-12 shadow-2xl bg-white mb-12">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+        <!-- 左侧：战略与审计核心逻辑 -->
+        <div>
+            <div class="flex items-center gap-3 mb-6">
+                <span class="px-4 py-1.5 bg-[#FFE600] text-black text-[10px] font-black rounded-lg uppercase tracking-tighter shadow-sm">EY-CBE Case Study</span>
+                <span class="text-slate-400 text-[10px] font-bold uppercase tracking-widest text-right">2025.7-2025.10</span>
+            </div>
+            <h3 class="text-3xl font-black mb-6 text-slate-800 leading-tight">数字化审计与战略财务重塑<br><span class="text-[20px] text-slate-500 font-bold">—— Big Deals 跨国零售巨头实战</span></h3>
+
+            <div class="space-y-8">
+                <!-- 模块 1: 战略洞察 -->
+                <div>
+                    <h4 class="flex items-center gap-2 font-bold text-slate-800 mb-2">
+                        <i class="fas fa-chart-pie text-purple-600"></i> 战略决策：Tableau 销售脉搏与结构优化
+                    </h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        整合千万级跨年度数据，识别出 Computers 品类（Notebooks/Tablets）的结构性增长与 Video Players 的持续萎缩。针对 <b>$12M 业绩缺口</b>，建议重估“国家×品类”业绩目标，推动营销预算向高毛利增长口袋重分配。
+                    </p>
                 </div>
-                <div class="gradient-border p-10 shadow-2xl">
-                    <div class="flex justify-between items-start mb-6">
-                        <span class="px-4 py-1.5 bg-emerald-100 text-emerald-700 text-xs font-black rounded-full uppercase tracking-tighter">校级第一名 (1/100+)</span>
-                        <span class="text-slate-400 text-xs font-bold uppercase tracking-widest">2022.06</span>
-                    </div>
-                    <h3 class="text-2xl font-black mb-6">“中汇杯”案例分析大赛</h3>
-                    <ul class="space-y-4 text-slate-600 text-sm leading-relaxed">
-                        <li class="flex gap-3"><i class="fas fa-check text-emerald-500 mt-1"></i><span><b>融资需求预测：</b>针对产能扩张计划，搭建财务模型测算 <b>90 亿元</b>融资缺口。</span></li>
-                        <li class="flex gap-3"><i class="fas fa-check text-emerald-500 mt-1"></i><span><b>并购成本测算：</b>设计 30% 股权并购方案，预估节省 <b>15 亿元</b>采购支出。</span></li>
-                        <li class="flex gap-3"><i class="fas fa-check text-emerald-500 mt-1"></i><span><b>激励优化：</b>利用 31.4 亿使用权资产缓解压力，设计“2+N”股权激励。</span></li>
-                    </ul>
+
+                <!-- 模块 2: 信用风险 -->
+                <div>
+                    <h4 class="flex items-center gap-2 font-bold text-slate-800 mb-2">
+                        <i class="fas fa-shield-virus text-amber-500"></i> 风险建模：$684.5k AR 信用穿透与径流分析
+                    </h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        量化 <b>57% 的头部客户集中度风险</b>。监测 DSO 从 28 天异常跳增至 95 天的流动性瓶颈，构建 30/60/90 天阶梯催收模型，通过后续 Runoff 验证，精准测算 10% 的审慎性坏账计提（ECL）。
+                    </p>
                 </div>
+
+                <!-- 模块 3: 数字化审计 -->
+                <div>
+                    <h4 class="flex items-center gap-2 font-bold text-slate-800 mb-2">
+                        <i class="fas fa-search-dollar text-blue-600"></i> 数字化审计：$1.75M 收入截止期误差查核
+                    </h4>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        运用 Tableau 执行 Order-to-Cash 全流程审计，识别出 <b>$1.75M 提前确认收入</b>（未实际发货）及 $1.24M 截止期（Cut-off）错报，纠正管理层为达成增长目标的利润操纵，维护 GAAP 合规性。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 右侧：高保真数字化报告图表 -->
+        <div class="space-y-6">
+            <!-- 模拟 Tableau：热力图偏差分析 -->
+            <div class="rounded-xl border border-slate-100 shadow-xl overflow-hidden bg-white group transition-all hover:shadow-2xl">
+                <div class="bg-slate-800 px-4 py-2 flex justify-between items-center">
+                    <span class="text-[9px] font-bold text-white uppercase tracking-widest">Revenue Variance Heatmap</span>
+                    <i class="fas fa-expand text-[9px] text-slate-400"></i>
+                </div>
+                <div class="p-4 bg-[#f8fafc]">
+                    <div class="grid grid-cols-4 gap-1">
+                        <div class="h-8 bg-emerald-500 rounded-sm opacity-90" title="US: Computers"></div>
+                        <div class="h-8 bg-emerald-300 rounded-sm opacity-80"></div>
+                        <div class="h-8 bg-red-400 rounded-sm opacity-90" title="UK: Tablets"></div>
+                        <div class="h-8 bg-emerald-400 rounded-sm opacity-80"></div>
+                        <div class="h-8 bg-emerald-200 rounded-sm opacity-70"></div>
+                        <div class="h-8 bg-red-500 rounded-sm opacity-100" title="LatAm: Video"></div>
+                        <div class="h-8 bg-red-300 rounded-sm opacity-80"></div>
+                        <div class="h-8 bg-emerald-500 rounded-sm opacity-90"></div>
+                    </div>
+                    <div class="flex justify-between mt-2 font-bold text-[8px] text-slate-400">
+                        <span>High Variance (-)</span>
+                        <span>Outperform (+)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 模拟 Excel：AR Aging Buckets (基于报告数据) -->
+            <div class="rounded-xl border border-slate-100 shadow-xl overflow-hidden bg-white p-5">
+                <h5 class="text-[10px] font-black mb-4 uppercase text-slate-500 flex justify-between">
+                    <span>AR Aging Structure</span>
+                    <span class="text-blue-600">Total: $684.5k</span>
+                </h5>
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3">
+                        <span class="text-[8px] w-10 font-bold text-slate-400">0-30d</span>
+                        <div class="flex-1 h-3 bg-blue-600 rounded-full"></div>
+                        <span class="text-[8px] font-black">55%</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-[8px] w-10 font-bold text-slate-400">31-60d</span>
+                        <div class="flex-1 h-3 bg-blue-400 rounded-full w-[34%]"></div>
+                        <span class="text-[8px] font-black text-slate-400">34%</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-[8px] w-10 font-bold text-slate-400">61-90d+</span>
+                        <div class="flex-1 h-3 bg-red-500 rounded-full w-[11%]"></div>
+                        <span class="text-[8px] font-black text-red-600">11%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 模拟审计：SQL 异常点自动扫描日志 -->
+            <div class="bg-[#1e1e1e] rounded-xl p-4 border border-slate-700 shadow-2xl relative">
+                <div class="absolute top-2 right-3 flex gap-1">
+                    <span class="w-2 h-2 rounded-full bg-red-500"></span>
+                    <span class="w-2 h-2 rounded-full bg-yellow-500"></span>
+                    <span class="w-2 h-2 rounded-full bg-green-500"></span>
+                </div>
+                <div class="font-mono text-[9px] leading-tight space-y-1">
+                    <p class="text-blue-400">-- Initializing Digital Audit: Cut-off Procedures</p>
+                    <p class="text-slate-500">SCANNING: CineMax_Entertainment_Supplier...</p>
+                    <p class="text-emerald-400 font-bold">[ALERT] Misstatement Found: $1,751,911.73</p>
+                    <p class="text-slate-300">SELECT * FROM Sales WHERE Shipping_ID IS NULL AND FedEx_ID IS NULL;</p>
+                    <p class="text-slate-500">STATUS: Adjusted JE generated for 31 Dec 2025.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                <!-- 项目 2: 浙江省财会信息化竞赛 -->
+                <div class="gradient-border p-8 md:p-12 shadow-2xl bg-white">
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <!-- 左侧：文案内容 -->
+                        <div>
+                            <div class="flex items-center gap-3 mb-6">
+                                <span class="px-4 py-1.5 bg-blue-600 text-white text-[10px] font-black rounded-lg uppercase">Provincial 1st Prize</span>
+                                <span class="text-slate-400 text-[10px] font-bold uppercase tracking-widest text-right">2021.12 - 2022.11</span>
+                            </div>
+                            <h3 class="text-3xl font-black mb-6 text-slate-800">浙江省财会信息化竞赛</h3>
+                            <div class="space-y-8">
+                                <div>
+                                    <h4 class="flex items-center gap-2 font-bold text-slate-800 mb-2"><i class="fas fa-layer-group text-blue-600"></i> ABC 成本核算：纠正 20% 毛利偏差</h4>
+                                    <p class="text-sm text-slate-600 leading-relaxed">基于作业成本法对百万级生产数据进行二次拆解，重新核算了 <b>87 万余元</b> 的制造费用，提升利润预测准确度。</p>
+                                </div>
+                                <div>
+                                    <h4 class="flex items-center gap-2 font-bold text-slate-800 mb-2"><i class="fas fa-balance-scale text-emerald-500"></i> 经营决策分析：WACC 资本结构优化</h4>
+                                    <p class="text-sm text-slate-600 leading-relaxed">运用 <b>CVP 模型</b> 测算盈亏平衡点；通过对比多套融资方案对 WACC 的影响，推算出公司扩张阶段的最优资本结构。</p>
+                                </div>
+                                <div>
+                                    <h4 class="flex items-center gap-2 font-bold text-slate-800 mb-2"><i class="fas fa-microchip text-slate-700"></i> 数字化方案：财务 BP 转型规划</h4>
+                                    <p class="text-sm text-slate-600 leading-relaxed">参与撰写 ERP 实施方案，实现供应链 164 万元成本构成的实时追溯与 WIP 积压节点的精确定位。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 右侧：可视化模拟图表 -->
+                        <div class="space-y-4">
+                            <div class="rounded-xl border border-slate-100 shadow-inner overflow-hidden bg-slate-50 p-4">
+                                <span class="text-[10px] font-bold text-blue-800 uppercase block mb-2">Cost Accuracy Optimization</span>
+                                <div class="relative pt-1">
+                                    <div class="flex mb-2 items-center justify-between"><span class="text-[9px] font-semibold text-slate-400">Traditional Method</span><span class="text-[9px] font-semibold text-slate-400">Error +20%</span></div>
+                                    <div class="overflow-hidden h-2 mb-4 flex rounded bg-slate-200">
+    <div style="width:0%" data-width="85%" class="bg-slate-400 h-full rounded transition-all duration-1000 ease-out animate-bar"></div>
+</div>
+                                    <div class="flex mb-2 items-center justify-between"><span class="text-[9px] font-semibold text-blue-600">ABC Method</span><span class="text-[9px] font-semibold text-blue-600">Accuracy 99%</span></div>
+                                    <div class="overflow-hidden h-2 mb-4 flex rounded bg-slate-200">
+    <div style="width:0%" data-width="100%" class="bg-blue-600 h-full rounded transition-all duration-1000 ease-out animate-bar"></div>
+</div>
+                                </div>
+                            </div>
+                            <div class="rounded-xl border border-slate-100 shadow-inner overflow-hidden bg-slate-900 p-5">
+                                <h5 class="text-[10px] font-bold mb-4 text-blue-400 uppercase tracking-widest">WACC Sensitivity Analysis</h5>
+                                <div class="grid grid-cols-3 gap-2 text-center mb-4">
+                                    <div class="p-2 border border-white/10 rounded"><p class="text-[8px] text-slate-500">30% Debt</p></div>
+                                    <div class="p-2 border border-blue-500/50 rounded bg-blue-500/10"><p class="text-[8px] text-blue-400">Optimal (45%)</p></div>
+                                    <div class="p-2 border border-white/10 rounded"><p class="text-[8px] text-slate-500">60% Debt</p></div>
+                                </div>
+                                <div class="flex h-12 items-end justify-between px-2">
+    <div style="height:0%" data-width="60%" class="w-1 bg-blue-800 transition-all duration-1000 ease-out animate-bar"></div> <div style="height:0%" data-width="40%" class="w-1 bg-emerald-400 transition-all duration-1000 ease-out animate-bar delay-100"></div>
+    <div style="height:0%" data-width="90%" class="w-1 bg-blue-800 transition-all duration-1000 ease-out animate-bar delay-200"></div>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 项目 3: “中汇杯”案例分析大赛 -->
+                <div class="gradient-border p-8 md:p-12 shadow-2xl bg-white">
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <!-- 左侧：文案内容 -->
+                        <div>
+                            <div class="flex items-center gap-3 mb-6">
+                                <span class="px-4 py-1.5 bg-emerald-600 text-white text-[10px] font-black rounded-lg uppercase">Campus 1st Prize</span>
+                                <span class="text-slate-400 text-[10px] font-bold uppercase tracking-widest text-right">2022.01 - 2022.06</span>
+                            </div>
+                            <h3 class="text-3xl font-black mb-6 text-slate-800">“中汇杯”会计案例分析大赛</h3>
+                            <div class="space-y-8">
+                                <div>
+                                    <h4 class="flex items-center gap-2 font-bold text-slate-800 mb-2"><i class="fas fa-vault text-emerald-600"></i> 融资预测：90 亿元资金缺口建模</h4>
+                                    <p class="text-sm text-slate-600 leading-relaxed">针对产能扩张计划，搭建管理用财务报表模型。通过杜邦分析评估不同杠杆下的风险，测算出 <b>90 亿元</b> 融资需求。</p>
+                                </div>
+                                <div>
+                                    <h4 class="flex items-center gap-2 font-bold text-slate-800 mb-2"><i class="fas fa-handshake text-blue-500"></i> 并购估值：15 亿元供应链协同</h4>
+                                    <p class="text-sm text-slate-600 leading-relaxed">设计并购上游供应商 30% 股权方案。通过内部结算模型预测，每年可节省约 <b>15 亿元</b> 采购支出。</p>
+                                </div>
+                                <div>
+                                    <h4 class="flex items-center gap-2 font-bold text-slate-800 mb-2"><i class="fas fa-users-gear text-orange-500"></i> 激励优化：31.4 亿资产与“2+N”机制</h4>
+                                    <p class="text-sm text-slate-600 leading-relaxed">提出利用 <b>31.4 亿元使用权资产</b> 缓解现金流。配套设计阶梯式股权激励机制，绑定高管利益与公司增长。</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 右侧：可视化模拟图表 -->
+                        <div class="space-y-4">
+                            <div class="rounded-xl border border-slate-100 shadow-inner overflow-hidden bg-slate-50 p-6 flex flex-col items-center">
+                                <span class="text-[10px] font-bold text-emerald-800 uppercase mb-4">Financing Requirement Gap (¥9.0B)</span>
+                                <div class="w-32 h-32 relative">
+                                    <svg viewBox="0 0 36 36" class="w-full h-full rotate-[-90deg]"><circle cx="18" cy="18" r="16" fill="none" class="stroke-slate-200" stroke-width="3"></circle><circle cx="18" cy="18" r="16" fill="none"
+        class="stroke-emerald-500 transition-all duration-1000 ease-out animate-ring"
+        stroke-width="3"
+        stroke-dasharray="0, 100"
+        data-dash="70">
+</circle></svg>
+                                    <div class="absolute inset-0 flex flex-col items-center justify-center"><span class="text-xl font-black">70%</span><span class="text-[8px] text-slate-400">Debt Fin.</span></div>
+                                </div>
+                            </div>
+                            <div class="rounded-xl border border-slate-100 shadow-inner overflow-hidden bg-slate-50 p-4">
+                                <span class="text-[9px] font-bold text-slate-500 uppercase block mb-3">"2+N" Equity Incentive Ladder</span>
+                                <div class="space-y-2">
+                                    <div class="flex items-center gap-2"><div class="w-10 text-[8px] font-bold">Year 1</div><div class="flex-1 h-2 bg-slate-200 rounded-full overflow-hidden"><div class="bg-orange-400 h-full w-1/3"></div></div></div>
+                                    <div class="flex items-center gap-2"><div class="w-10 text-[8px] font-bold">Year 2</div><div class="flex-1 h-2 bg-slate-200 rounded-full overflow-hidden"><div class="bg-orange-500 h-full w-2/3"></div></div></div>
+                                    <div class="flex items-center gap-2"><div class="w-10 text-[8px] font-bold">Year N</div><div class="flex-1 h-2 bg-slate-200 rounded-full overflow-hidden"><div class="bg-orange-600 h-full w-full"></div></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -250,7 +518,7 @@
                         </div>
                         <div class="p-6 bg-white/5 rounded-2xl border border-white/10 hover:border-emerald-500 transition-colors">
                             <h4 class="font-black text-emerald-400 mb-2 italic tracking-widest"># PRODUCTS I LIKE</h4>
-                            <p class="text-[11px] text-slate-400 leading-relaxed font-semibold uppercase">Cursor, Tableau, SQL Server, SAP ERP, Pandas.</p>
+                            <p class="text-[11px] text-slate-400 leading-relaxed font-semibold uppercase">用友&金蝶&MYOB, Python, Tableau, SQL Server, Pandas.</p>
                         </div>
                     </div>
                 </div>
@@ -268,6 +536,46 @@
     <footer class="py-16 bg-white border-t border-slate-100 text-center">
         <p class="text-slate-400 text-[10px] font-black tracking-[0.3em] uppercase">DESIGNED, CODED AND DEPLOYED BY YUHANG LIU  | 2026</p>
     </footer>
+   <!-- 数据动起来 -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // 配置观察器：当元素进入屏幕 10% 时触发
+        const observerOptions = { threshold: 0.1 };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const el = entry.target;
+
+                    // 1. 处理进度条动画 (Bar Charts)
+                    if (el.classList.contains('animate-bar')) {
+                        // 从 data-width 读取目标宽度
+                        const width = el.getAttribute('data-width');
+                    // 智能判断：如果是竖着的柱子(父容器是 flex items-end)，则改变高度，否则改变宽度
+if (el.parentElement.classList.contains('items-end')) {
+    el.style.height = width;
+} else {
+    el.style.width = width;
+};
+                    }
+
+                    // 2. 处理圆环图动画 (Donut Charts)
+                    if (el.classList.contains('animate-ring')) {
+                        const dash = el.getAttribute('data-dash');
+                        // SVG stroke-dasharray 动画
+                        el.style.strokeDasharray = `${dash}, 100`;
+                    }
+
+                    // 动画完成后取消观察，避免反复触发
+                    observer.unobserve(el);
+                }
+            });
+        }, observerOptions);
+
+        // 注册所有需要动画的元素
+        document.querySelectorAll('.animate-bar, .animate-ring').forEach(el => observer.observe(el));
+    });
+</script>
 
 </body>
 </html>
